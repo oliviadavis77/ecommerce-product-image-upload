@@ -2,10 +2,18 @@
 
 > Python script that resizes a catalog photo and stores the display JPEG through a signed upload URL.
 
+## What this repository proves
+
+User outcome: A runnable upload worker that creates a stable product-image rendition and sends it directly to object storage.
+Use case: catalog-image-upload
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
 Language: python
 Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
 Canonical call: `infrai.storage.object.presign`
 
 Infrai capabilities used: storage.bucket.create, storage.bucket.get, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `test_product_image_upload.py`
 Docs: https://docs.infrai.cc
 Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

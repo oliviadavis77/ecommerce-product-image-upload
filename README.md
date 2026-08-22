@@ -51,3 +51,7 @@ The example above is intentionally minimal. A few things to wire up for real use
 **Ecommerce Product Image Upload: Storage**
 - **Ecommerce Product Image Upload:** Create the bucket with the right ACL/region up front (`POST /v1/storage/bucket/create`); set CORS for browser uploads (`POST /v1/storage/bucket/set_cors`).
 - **Ecommerce Product Image Upload:** Presigned URLs expire — set the shortest workable lifetime. Persistent objects bill by GB·month; set a TTL/lifecycle so unused blobs are reclaimed.
+
+## Further reading
+
+- [Node.js Catalog Archives: Private Object Download Links Under Peak Throughput](docs/node-js-catalog-archives-private-object-download-rft8gk.md)
